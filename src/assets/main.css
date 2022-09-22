@@ -243,6 +243,10 @@ body {
 .pricing-item-content {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+.pricing-image {
+  margin-top: 3rem;
 }
 .pricing-image img {
   max-height: 100%;
