@@ -230,26 +230,8 @@ body {
   font-weight: 900;
 }
 
-.pricing-head .text {
-  margin-bottom: 1rem;
-}
-
-.pricing-content {
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.pricing-item-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 .pricing-image {
-  margin-top: 3rem;
-}
-.pricing-image img {
-  max-height: 100%;
+  margin-top: 5rem;
 }
 
 .carousel {
@@ -257,15 +239,14 @@ body {
   width: 80%;
   height: 100%;
   position: absolute;
-  top: 60%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
 .slider {
-  flex: 0 0 auto;
-  width: 150%;
+  width: 300%;
   display: flex;
   gap: 10px;
   pointer-events: none;
@@ -273,6 +254,21 @@ body {
   top: 0;
   left: 0;
   padding: 2rem;
+}
+
+.pricing-info {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.btn-add-cart {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 
 /* ---- PRICING SECTION ENDS HERE---- */
