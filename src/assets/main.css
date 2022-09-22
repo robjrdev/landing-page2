@@ -161,7 +161,7 @@ body {
 
 /* ---- FEATURE SECTION STARTS HERE ---- */
 .feature {
-  padding: 4rem 0;
+  padding-top: 4rem;
 }
 .feature-header .sub-header {
   text-align: center;
@@ -172,7 +172,6 @@ body {
 
 .feature-header .text {
   text-align: center;
-  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -217,7 +216,58 @@ body {
 /* ---- PRICING SECTION STARTS HERE ---- */
 
 .pricing {
-  height: 100vh;
+  margin-top: 4.5rem;
+  height: 80vh;
+  position: relative;
+}
+.pricing-head {
+  text-align: center;
+}
+
+.pricing-header {
+  color: var(--main-bg-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.pricing-head .text {
+  margin-bottom: 1rem;
+}
+
+.pricing-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-item-content {
+  display: flex;
+  flex-direction: column;
+}
+.pricing-image img {
+  max-height: 100%;
+}
+
+.carousel {
+  margin-top: 4rem;
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.slider {
+  width: 150%;
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
 }
 
 /* ---- PRICING SECTION ENDS HERE---- */
