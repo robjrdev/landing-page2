@@ -3,6 +3,7 @@
   --sub-bg-color: #caf0f8;
   --main-text-color: #fff;
   --sub-text-color: #333;
+  --hero-bg-color: #fff;
 
   --box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -24,7 +25,7 @@ body {
   width: 90%;
   height: 80vh;
   padding: 0 1rem;
-  margin: 0 auto;
+  margin: 0rem auto;
 }
 
 /* NAVBAR / HEADER STYLING  STARTS HERE*/
@@ -103,6 +104,11 @@ body {
 .hero {
   padding: 1rem 0;
   height: 100vh;
+  background: url(images/hero-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .hero-content {
@@ -126,6 +132,7 @@ body {
 }
 
 .main-text {
+  color: var(--main-text-color);
   font-size: 1.2rem;
 }
 .btn-hero {
@@ -191,7 +198,13 @@ body {
   padding: 4rem;
   margin: 0.5rem;
   box-shadow: var(--box-shadow);
+  flex: 0 0 50%;
+  align-self: stretch;
 }
+
+/* .features-item-content {
+  box-shadow: var(--box-shadow);
+} */
 
 .product-features-item h4 {
   font-size: 1.2rem;
@@ -255,13 +268,13 @@ body {
   .hero-content {
     padding-top: 2rem;
   }
+  .product-features-item {
+    flex: 0 0 45%;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   /* --------- HERO ------- */
-  .hero-content {
-    padding: 0rem;
-  }
 
   .feature-product-features {
     flex-direction: row;
@@ -270,25 +283,27 @@ body {
   }
 
   .product-features-item {
-    flex-basis: 45%;
+    flex: 0 0 45%;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1025px) {
   /* --------- HERO ------- */
   .hero-content {
-    padding-top: 9rem;
+    padding-top: 10rem;
     flex-direction: row;
   }
   .hero {
-    height: 85%;
-    padding-bottom: 4rem;
+    height: 80%;
   }
 
   .feature-content {
     flex-direction: row;
   }
 
+  .feature {
+    padding-top: 0;
+  }
   .feature-image {
     display: flex;
     margin-bottom: 0;
@@ -309,6 +324,6 @@ body {
   .product-features-item {
     padding: 1rem;
     margin: 0.2rem;
-    flex-basis: 45%;
+    flex: 0 0 45%;
   }
 }
