@@ -22,7 +22,7 @@ body {
 
 .container {
   width: 90%;
-  height: 100%;
+  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -98,22 +98,23 @@ body {
 /* ---- HERO SECTION STARTS HERE---- */
 
 .hero {
-  padding: 1rem 0;
-  height: 80vh;
+  padding: 3rem 0;
+  height: 100vh;
 }
 
 .hero-content {
+  padding-top: 2rem;
+  height: 100%;
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .hero-text {
   text-align: center;
   padding: 1rem;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  flex: 3 0 50%;
+  padding-bottom: 0;
+  flex-basis: 50%;
 }
 
 .main-header {
@@ -122,17 +123,18 @@ body {
   font-weight: 900;
 }
 
-.hero-text > .text {
+.main-text {
   font-size: 1.2rem;
 }
 .btn-hero {
+  font-size: 1.5rem;
   color: var(--main-text-color);
   background-color: var(--main-bg-color);
   font-weight: 900;
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   display: inline-block;
-  margin-top: 1rem;
+  margin: 3rem 0;
   text-decoration: none;
 }
 .btn-hero:hover {
@@ -143,8 +145,9 @@ body {
 }
 
 .hero-image {
+  display: flex;
+  flex-basis: 50%;
   box-shadow: var(--box-shadow);
-  flex-shrink: 1 2 40%;
 }
 /* ---- HERO SECTION ENDS HERE---- */
 
@@ -153,6 +156,11 @@ body {
 /* ---- PRODUCT SECTION ENDS HERE---- */
 
 /* MEDIA QUERIES */
+
+/* @media (max-width: 480px) {
+  
+  }
+ */
 
 @media (max-width: 768px) {
   /* NAVBAR / HEADER STYLING STARTS HERE*/
@@ -197,13 +205,53 @@ body {
   /* NAVBAR / HEADER STYLING ENDS HERE*/
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 481px) and (max-width: 768px) {
+  /* --------- HERO ------- */
   .hero-content {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* --------- HERO ------- */
+  .hero-content {
+    padding: 0 4rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  /* --------- HERO ------- */
+  .hero-content {
+    padding-top: 0;
     flex-direction: row;
-    height: 100%;
+  }
+  .hero {
+    height: 85%;
+    display: flex;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  /* --------- HERO ------- */
+
+  .hero {
+    height: 85%;
+    display: flex;
   }
 
-  .container {
-    width: 85%;
+  .hero-content {
+    padding-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .main-text {
+    padding-right: 5rem;
   }
 }
