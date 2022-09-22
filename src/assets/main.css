@@ -23,7 +23,6 @@ body {
 
 .container {
   width: 90%;
-  height: 80vh;
   padding: 0 1rem;
   margin: 0rem auto;
 }
@@ -115,7 +114,7 @@ body {
   padding-top: 2rem;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
+  gap: 1rem;
 }
 
 .hero-text {
@@ -155,7 +154,7 @@ body {
 
 .hero-image {
   display: flex;
-  flex-basis: 45%;
+  flex-basis: 55%;
   box-shadow: var(--box-shadow);
 }
 /* ---- HERO SECTION ENDS HERE---- */
@@ -190,15 +189,17 @@ body {
   color: var(--sub-text-color);
   flex-basis: 50%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .product-features-item {
   text-align: center;
-  padding: 4rem;
+  padding: 1.5rem;
   margin: 0.5rem;
   box-shadow: var(--box-shadow);
-  flex: 0 0 50%;
+  flex: 1 0 50%;
   align-self: stretch;
 }
 
@@ -212,6 +213,14 @@ body {
 }
 
 /* ---- FEATURE SECTION ENDS HERE---- */
+
+/* ---- PRICING SECTION STARTS HERE ---- */
+
+.pricing {
+  height: 100vh;
+}
+
+/* ---- PRICING SECTION ENDS HERE---- */
 
 /* MEDIA QUERIES */
 
@@ -276,6 +285,15 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   /* --------- HERO ------- */
 
+  .hero {
+    height: 65vh;
+  }
+  .hero-content {
+    padding-top: 1rem;
+    flex-direction: row;
+    gap: 0;
+  }
+
   .feature-product-features {
     flex-direction: row;
     flex-wrap: wrap;
@@ -287,11 +305,12 @@ body {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
   /* --------- HERO ------- */
   .hero-content {
-    padding-top: 10rem;
+    padding-top: 7rem;
     flex-direction: row;
+    justify-content: space-around;
   }
   .hero {
     height: 80%;
@@ -325,5 +344,49 @@ body {
     padding: 1rem;
     margin: 0.2rem;
     flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 1201px) {
+  .hero-content {
+    padding-top: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .hero {
+    height: 80%;
+  }
+
+  .feature-content {
+    flex-direction: row;
+  }
+
+  .feature {
+    padding-top: 0;
+  }
+  .feature-image {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .feature-image,
+  .feature-product-features {
+    flex-basis: 50%;
+  }
+
+  .feature-product-features {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-features-item {
+    padding: 1rem;
+    margin: 0.2rem;
+    flex: 0 0 40%;
+  }
+  .features-item-content {
+    padding: 0 0.5rem;
+    margin: 0.2rem;
   }
 }
