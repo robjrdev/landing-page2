@@ -236,8 +236,8 @@ body {
 
 .pricing-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 .pricing-item-content {
@@ -251,15 +251,16 @@ body {
 .carousel {
   margin-top: 4rem;
   width: 80%;
-  height: 60%;
+  height: 100%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
 
 .slider {
+  flex: 0 0 auto;
   width: 150%;
   display: flex;
   gap: 10px;
