@@ -357,10 +357,6 @@ body {
 
 /* ---- FOOTER SECTION STARTS HERE---- */
 
-.footer {
-  display: none;
-}
-
 /* ---- FOOTER SECTION ENDS HERE---- */
 
 /* MEDIA QUERIES */
@@ -421,10 +417,6 @@ body {
   .product-features-item {
     flex: 0 0 45%;
   }
-
-  .footer {
-    display: flex;
-  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -447,6 +439,14 @@ body {
 
   .product-features-item {
     flex: 0 0 45%;
+  }
+
+  .footer-content {
+    display: flex;
+  }
+
+  .footer-nav {
+    font-size: 1.2rem;
   }
 }
 
@@ -565,5 +565,9 @@ body {
 
   .contact-head {
     margin-bottom: 0;
+  }
+
+  .footer {
+    display: flex;
   }
 }
