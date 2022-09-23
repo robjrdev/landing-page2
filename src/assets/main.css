@@ -90,6 +90,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .sticky + .main {
@@ -272,6 +273,10 @@ body {
 }
 
 /* ---- PRICING SECTION ENDS HERE---- */
+
+/* ---- CONTACT SECTION STARTS HERE---- */
+
+/* ---- CONTACT SECTION ENDS HERE---- */
 
 /* MEDIA QUERIES */
 
