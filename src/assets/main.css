@@ -357,6 +357,10 @@ body {
 
 /* ---- FOOTER SECTION STARTS HERE---- */
 
+.footer {
+  display: none;
+}
+
 /* ---- FOOTER SECTION ENDS HERE---- */
 
 /* MEDIA QUERIES */
@@ -416,6 +420,10 @@ body {
   }
   .product-features-item {
     flex: 0 0 45%;
+  }
+
+  .footer {
+    display: flex;
   }
 }
 
