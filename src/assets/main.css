@@ -275,6 +275,23 @@ body {
 /* ---- PRICING SECTION ENDS HERE---- */
 
 /* ---- CONTACT SECTION STARTS HERE---- */
+.contact-head {
+  margin-bottom: 2.5rem;
+}
+.contact-header {
+  color: var(--sub-text-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.contact-sub-header {
+  margin: 2rem 0 0.5rem;
+}
+
+.contact-text {
+  margin-top: 0.5rem;
+}
 
 /* ---- CONTACT SECTION ENDS HERE---- */
 
